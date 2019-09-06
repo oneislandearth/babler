@@ -65,3 +65,9 @@ Babler supports path alias resolving similar to [Webpack](https://webpack.js.org
 On execution, Babler will resolve path aliases using the `baseUrl` and `paths` in your [jsconfig.json](https://code.visualstudio.com/docs/languages/jsconfig).
 
 Babler will also add a git `pre-commit` hook if possible which will run your `prepublish` script.
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2019-present, OneIsland Limited
