@@ -42,7 +42,7 @@ module.exports = babelConfig({
 
 The Babler CLI can be executed from within any [npm script](https://docs.npmjs.com/cli/run-script).
 
-When installing Babler, a `prepublish` script will be added to your `package.json` (if one does not already exist).
+When installing Babler, a `prepublishOnly` script will be added to your `package.json` (if one does not already exist).
 
 ##### package.json (example)
 
@@ -53,7 +53,7 @@ When installing Babler, a `prepublish` script will be added to your `package.jso
   "description": "A test package using Babler",
   "main": "dist/index.js",
   "scripts": {
-    "prepublish": "oneisland-babler dist"
+    "prepublishOnly": "oneisland-babler dist"
   }
 }
 ```
@@ -64,7 +64,7 @@ Babler supports path alias resolving similar to [Webpack](https://webpack.js.org
 
 On execution, Babler will resolve path aliases using the `baseUrl` and `paths` in your [jsconfig.json](https://code.visualstudio.com/docs/languages/jsconfig).
 
-Babler will also add a git `pre-commit` hook if possible which will run your `prepublish` script.
+Babler will also add a git `pre-commit` hook if possible which will run your `prepublishOnly` script.
 
 ## License
 
