@@ -1,7 +1,7 @@
 {
   "name": "@oneisland/babler",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "The perfectly simple version of Babel configured for packing your packages",
   "keywords": [
     "babler",
