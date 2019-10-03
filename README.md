@@ -10,6 +10,8 @@ The perfectly simple version of Babel configured for packing your packages
 
 ## Installation
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/oneislandearth/babler.svg)](https://greenkeeper.io/)
+
 [Babler](https://github.com/oneislandearth/babler) is available through the [npm registry](https://www.npmjs.com/package/@oneisland/babler):
 
 ```bash
