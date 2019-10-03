@@ -4,6 +4,19 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://greenkeeper.io" target="_blank">
+  <img src="https://badges.greenkeeper.io/oneislandearth/babler.svg"></a>
+  <a href="https://travis-ci.org" target="_blank">
+  <img src="https://api.travis-ci.org/oneislandearth/babler.svg?branch=master"></a>
+  <a href="https://packagephobia.now.sh/result?p=@oneisland/babler" target="_blank">
+  <img src="https://packagephobia.now.sh/badge?p=@oneisland/babler"></a>
+  <a href="https://snyk.io/vuln/search?q=@oneisland/babler&type=npm" target="_blank">
+  <img src="https://img.shields.io/snyk/vulnerabilities/github/oneislandearth/babler.svg"></a>
+  <a href="https://www.npmjs.com/package/@oneisland/babler" target="_blank">
+  <img src="https://img.shields.io/npm/l/@oneisland/babler.svg"></a>
+</p>
+
 ***
 
 The perfectly simple version of Babel configured for packing your packages
