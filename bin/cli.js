@@ -14,7 +14,7 @@ const outputDirectory = ((process.argv[2]) ? process.argv[2] : 'dist');
 removeDirectoryRecursive(path.resolve(process.cwd(), outputDirectory));
 
 // Run the files in the source directory through babel
-execSync(`babel ${findSourceDirectory()} -d ${outputDirectory}`, { 
+execSync(`babel ${findSourceDirectory()} -d ${outputDirectory} --source-maps`, { 
   cwd: process.cwd(),
   stdio: 'inherit'
 });
