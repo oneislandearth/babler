@@ -2,7 +2,7 @@
 
 // Import the required node modules
 const path = require('path');
-const { execSync } = require('child_process');
+const { exec, execSync } = require('child_process');
 
 // Import the required utils
 const { findSourceDirectory, removeDirectoryRecursive } = require('../lib/utils');
@@ -12,13 +12,16 @@ const outputDirectory = ((process.argv[2]) ? process.argv[2] : 'dist');
 
 // Remove the current output directory
 // removeDirectoryRecursive(path.resolve(process.cwd(), outputDirectory));
-execSync(`rm -rf ${outputDirectory}`, { 
-  cwd: process.cwd(),
-  stdio: 'inherit'
-});
 
-// Run the files in the source directory through babel
-execSync(`babel ${findSourceDirectory()} -d ${outputDirectory} --source-maps`, { 
+// Remove the current output directory
+exec(`rm -rf ${outputDirectory}`, { 
   cwd: process.cwd(),
   stdio: 'inherit'
+}, () => {
+
+  // Run the files in the source directory through babel
+  execSync(`babel ${findSourceDirectory()} -d ${outputDirectory} --source-maps`, { 
+    cwd: process.cwd(),
+    stdio: 'inherit'
+  });
 });
