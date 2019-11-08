@@ -11,7 +11,11 @@ const { findSourceDirectory, removeDirectoryRecursive } = require('../lib/utils'
 const outputDirectory = ((process.argv[2]) ? process.argv[2] : 'dist');
 
 // Remove the current output directory
-removeDirectoryRecursive(path.resolve(process.cwd(), outputDirectory));
+// removeDirectoryRecursive(path.resolve(process.cwd(), outputDirectory));
+execSync(`rm -rf ${outputDirectory}`, { 
+  cwd: process.cwd(),
+  stdio: 'inherit'
+});
 
 // Run the files in the source directory through babel
 execSync(`babel ${findSourceDirectory()} -d ${outputDirectory} --source-maps`, { 
