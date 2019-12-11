@@ -20,7 +20,7 @@
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "babel-plugin-module-resolver": "^3.2.0"
+    "babel-plugin-module-resolver": "^4.0.0"
   },
   "homepage": "https://github.com/oneislandearth/babler",
   "repository": {
